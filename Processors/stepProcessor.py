@@ -14,8 +14,12 @@ class stepProcessor(handler):
         return handler
 
     @abstractmethod
-    def handle(self, request: Any):
+    def handle(self, request: Any,seqNum:int):
         if self._next_handler:
             return self._next_handler.handle(request)
 
-        return None
+        return 
+        
+    def stepPreValidator(self,request:Any):
+        print("I am  in the stepProcessor")
+        pass

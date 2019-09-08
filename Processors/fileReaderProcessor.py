@@ -5,8 +5,6 @@ from stepProcessor import stepProcessor
 
 class fileReaderProcessor(stepProcessor):
     
-    def set_next(self, handler: handler):
-        pass
-    
-    def handle(self, request):
+    def handle(self, request,seqNum:int):
+        print("I am  in the fileReaderProcessor")
         pass
