@@ -1,6 +1,7 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, Optional
+from stepsEntity import stepsEntity
 
 class handler(ABC):
 
@@ -9,5 +10,5 @@ class handler(ABC):
         pass
     
     @abstractmethod
-    def handle(self, request):
+    def handle(self, request:stepsEntity):
         pass
