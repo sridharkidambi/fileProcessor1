@@ -1,11 +1,9 @@
-from __future__ import annotations
-from abc import ABC, abstractmethod
-from typing import Any, Optional
-from stepProcessor import stepProcessor
-from stepsEntity import stepsEntity
-
-class fileReaderProcessor(stepProcessor):
+from Processors.AbstractHandler import AbstractHandler
+class fileReaderProcessor(AbstractHandler):
     
-    def handle(self, request:stepsEntity,seqNum:int):
+    def handle(self, request:any,seqNum:int):
         print("I am  in the fileReaderProcessor")
-        pass
+        return
+
+   
+        

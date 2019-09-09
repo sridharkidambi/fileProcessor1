@@ -1,8 +1,12 @@
 import json
 from collections import namedtuple
 import  namedtupled
-stepProcessingItems:namedtupled
-def __init__():
+from Processors import stepsEntity
+# from Processors import stepProcessor
+
+
+def __init__(self):
+    stepProcessingItems:namedtupled
     print("starting the file processing")
     file_obj=open('./sample.json','r')
 
@@ -16,8 +20,12 @@ def __init__():
     # nt= namedTupleConstructor(**json_object)
     # print(type(nt))
     stepProcessingItems = namedtupled.map(json_object)
+    print(type(stepProcessingItems))
     print(stepProcessingItems.accounting)
+    
+    obj = stepsEntity(stepProcessingItems)
     # for item in list(stepProcessingItems.accounting)
     # print(item.lastName)
+    return None
 
 __init__()
