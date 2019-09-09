@@ -7,7 +7,7 @@ import namedtupled
 
 class StepsEntity:
    
-   def __init__(self,stepsEvaluator):
+   def __init__(self,stepsEvaluator:any):
         self.stepsEvaluator=stepsEvaluator
 
    def getEntity(self):

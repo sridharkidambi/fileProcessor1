@@ -1,11 +1,11 @@
 import json
 from collections import namedtuple
 import  namedtupled
-from Processors import stepsEntity
+from Processors.StepsEntity import StepsEntity
 # from Processors import stepProcessor
 
 
-def __init__(self):
+def __init__():
     stepProcessingItems:namedtupled
     print("starting the file processing")
     file_obj=open('./sample.json','r')
@@ -23,9 +23,10 @@ def __init__(self):
     print(type(stepProcessingItems))
     print(stepProcessingItems.accounting)
     
-    obj = stepsEntity(stepProcessingItems)
+    obj = StepsEntity(stepProcessingItems)
     # for item in list(stepProcessingItems.accounting)
     # print(item.lastName)
+    print(obj.getEntity())
     return None
-
-__init__()
+if __name__ == "__main__":
+    __init__()
